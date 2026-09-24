@@ -5,7 +5,7 @@
   // Menu
   $("#menu-groups").innerHTML = S.menu.map(function (g) {
     return '<div class="group"><h3>' + esc(g.group) + '</h3><div class="grid">' + g.items.map(function (i) {
-      return '<article class="card">' + (S.images[i.name] ? '<img src="images/products/' + S.images[i.name] + '" alt="' + esc(i.name) + '" loading="lazy" width="1100" height="800">' : '<div class="ph" role="img" aria-label="Photo of ' + esc(i.name) + ' coming soon">Photo coming soon</div>') + '<div class="body"><h4>' + esc(i.name) + '</h4>' +
+      return '<article class="card">' + (S.images[i.name] ? '<img src="' + S.images[i.name] + '" alt="' + esc(i.name) + '" loading="lazy" width="1100" height="800">' : '<div class="ph" role="img" aria-label="Photo of ' + esc(i.name) + ' coming soon">Photo coming soon</div>') + '<div class="body"><h4>' + esc(i.name) + '</h4>' +
         (i.desc ? '<p>' + esc(i.desc) + '</p>' : '') + (i.flavors.length ? '<p><em>' + i.flavors.map(esc).join(", ") + '</em></p>' : '') +
         '<span class="price">' + esc(i.price || S.priceNote) + '</span><a class="btn small order-link" href="#contact">ORDER</a></div></article>';
     }).join("") + '</div></div>';
@@ -27,7 +27,7 @@
 
   // Gallery with category filter
   var cats = ["All"].concat(S.gallery.map(function (g) { return g.cat; }).filter(function (c, i, a) { return a.indexOf(c) === i; }));
-  function drawGal(c) { $("#gal").innerHTML = S.gallery.filter(function (g) { return c === "All" || g.cat === c; }).map(function (g) { return '<img src="images/products/' + g.f + '" alt="' + esc(g.alt) + '" loading="lazy">'; }).join(""); }
+  function drawGal(c) { $("#gal").innerHTML = S.gallery.filter(function (g) { return c === "All" || g.cat === c; }).map(function (g) { return '<img src="' + g.f + '" alt="' + esc(g.alt) + '" loading="lazy">'; }).join(""); }
   $("#gal-filter").innerHTML = cats.map(function (c, i) { return '<button type="button" class="chip" aria-pressed="' + (i === 0) + '">' + c + '</button>'; }).join("");
   $("#gal-filter").addEventListener("click", function (e) { if (e.target.className !== "chip") return; document.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", b === e.target); }); drawGal(e.target.textContent); });
   drawGal("All");

@@ -56,32 +56,32 @@ window.SITE = {
   ]
 };
 
-/* Photos live in images/products. Card photos are matched by item name; add or change freely. */
+/* Photos live at the top level of the repository. Card photos are matched by item name; add or change freely. */
 window.SITE.images = {
-  "Les Tartelettes": "tartlets/tartlets-berry.jpg", "Les Éclairs": "eclairs/eclairs-chocolate.jpg", "Canelé de Bordeaux": "canele/canele.jpg",
-  "Tiramisù Lavoré": "tiramisu/tiramisu.jpg", "Peach Cobbler": "cinnamon-rolls/cinnamon-peach-cobbler.jpg", "Blueberry Lemon": "cinnamon-rolls/cinnamon-blueberry-lemon.jpg",
-  "Strawberry Cheesecake": "cinnamon-rolls/cinnamon-strawberry-cheesecake.jpg",
-  "Classic Vanilla": "bundtlets/bundtlet-vanilla.jpg", "Chocolate": "bundtlets/bundtlet-chocolate.jpg", "Apple Pie": "bundtlets/bundtlet-apple-pie.jpg", "Red Velvet": "bundtlets/bundtlet-red-velvet.jpg"
+  "Les Tartelettes": "tartlets-berry.jpg", "Les Éclairs": "eclairs-chocolate.jpg", "Canelé de Bordeaux": "canele.jpg",
+  "Tiramisù Lavoré": "tiramisu.jpg", "Peach Cobbler": "cinnamon-peach-cobbler.jpg", "Blueberry Lemon": "cinnamon-blueberry-lemon.jpg",
+  "Strawberry Cheesecake": "cinnamon-strawberry-cheesecake.jpg",
+  "Classic Vanilla": "bundtlet-vanilla.jpg", "Chocolate": "bundtlet-chocolate.jpg", "Apple Pie": "bundtlet-apple-pie.jpg", "Red Velvet": "bundtlet-red-velvet.jpg"
 };
-/* Gallery: f = file in images/products, cat = filter label */
+/* Gallery: f = photo file name, cat = filter label */
 window.SITE.gallery = [
-  { f: "bundtlets/bundtlet-assortment.jpg", cat: "Bundtlet Cakes", alt: "Assorted Bundtlet cakes with glaze on a marble board" },
-  { f: "tartlets/tart-collection.jpg", cat: "Tartlettes", alt: "Six tartlets on a marble board" },
-  { f: "eclairs/eclair-raspberry.jpg", cat: "Éclairs", alt: "Raspberry éclair with gold leaf" },
-  { f: "canele/canele.jpg", cat: "Canelé", alt: "Canelé on a plate with a glass dome" },
-  { f: "tiramisu/tiramisu.jpg", cat: "Tiramisù", alt: "Tiramisù in a glass" },
-  { f: "cinnamon-rolls/cinnamon-rolls-pair.jpg", cat: "Cinnamon Rolls", alt: "Peach cobbler and strawberry cheesecake cinnamon rolls" },
-  { f: "events/dessert-table.jpg", cat: "Events", alt: "Wedding dessert table with a tiered cake" },
-  { f: "tartlets/tartlets-berry.jpg", cat: "Tartlettes", alt: "Berry tartlets on a platter" },
-  { f: "eclairs/eclairs-chocolate.jpg", cat: "Éclairs", alt: "Chocolate éclairs with gold leaf" },
-  { f: "bundtlets/bundtlet-display.jpg", cat: "Bundtlet Cakes", alt: "Bundtlet cakes on small stands" },
-  { f: "tiramisu/tiramisu-raspberry.jpg", cat: "Tiramisù", alt: "Raspberry tiramisù slice" },
-  { f: "tiramisu/berry-trifle.jpg", cat: "Tiramisù", alt: "Berry trifle cup" },
-  { f: "tartlets/tart-blackberry-pistachio.jpg", cat: "Tartlettes", alt: "Blackberry and pistachio tart" },
-  { f: "bundtlets/bundtlet-apple-pie.jpg", cat: "Bundtlet Cakes", alt: "Glazed apple Bundtlet with dried apple chips" },
-  { f: "cinnamon-rolls/cinnamon-blueberry-lemon.jpg", cat: "Cinnamon Rolls", alt: "Blueberry lemon cinnamon roll" },
-  { f: "cinnamon-rolls/cinnamon-peach-cobbler.jpg", cat: "Cinnamon Rolls", alt: "Peach cobbler cinnamon roll" },
-  { f: "cinnamon-rolls/cinnamon-strawberry-cheesecake.jpg", cat: "Cinnamon Rolls", alt: "Strawberry cheesecake cinnamon roll" },
-  { f: "about/chef-piping.jpg", cat: "Behind the Scenes", alt: "Pastry chef piping cream onto a berry tart" },
-  { f: "about/recipe-notebook.jpg", cat: "Behind the Scenes", alt: "Recipe notebook surrounded by baking ingredients" }
+  { f: "bundtlet-assortment.jpg", cat: "Bundtlet Cakes", alt: "Assorted Bundtlet cakes with glaze on a marble board" },
+  { f: "tart-collection.jpg", cat: "Tartlettes", alt: "Six tartlets on a marble board" },
+  { f: "eclair-raspberry.jpg", cat: "Éclairs", alt: "Raspberry éclair with gold leaf" },
+  { f: "canele.jpg", cat: "Canelé", alt: "Canelé on a plate with a glass dome" },
+  { f: "tiramisu.jpg", cat: "Tiramisù", alt: "Tiramisù in a glass" },
+  { f: "cinnamon-rolls-pair.jpg", cat: "Cinnamon Rolls", alt: "Peach cobbler and strawberry cheesecake cinnamon rolls" },
+  { f: "dessert-table.jpg", cat: "Events", alt: "Wedding dessert table with a tiered cake" },
+  { f: "tartlets-berry.jpg", cat: "Tartlettes", alt: "Berry tartlets on a platter" },
+  { f: "eclairs-chocolate.jpg", cat: "Éclairs", alt: "Chocolate éclairs with gold leaf" },
+  { f: "bundtlet-display.jpg", cat: "Bundtlet Cakes", alt: "Bundtlet cakes on small stands" },
+  { f: "tiramisu-raspberry.jpg", cat: "Tiramisù", alt: "Raspberry tiramisù slice" },
+  { f: "berry-trifle.jpg", cat: "Tiramisù", alt: "Berry trifle cup" },
+  { f: "tart-blackberry-pistachio.jpg", cat: "Tartlettes", alt: "Blackberry and pistachio tart" },
+  { f: "bundtlet-apple-pie.jpg", cat: "Bundtlet Cakes", alt: "Glazed apple Bundtlet with dried apple chips" },
+  { f: "cinnamon-blueberry-lemon.jpg", cat: "Cinnamon Rolls", alt: "Blueberry lemon cinnamon roll" },
+  { f: "cinnamon-peach-cobbler.jpg", cat: "Cinnamon Rolls", alt: "Peach cobbler cinnamon roll" },
+  { f: "cinnamon-strawberry-cheesecake.jpg", cat: "Cinnamon Rolls", alt: "Strawberry cheesecake cinnamon roll" },
+  { f: "chef-piping.jpg", cat: "Behind the Scenes", alt: "Pastry chef piping cream onto a berry tart" },
+  { f: "recipe-notebook.jpg", cat: "Behind the Scenes", alt: "Recipe notebook surrounded by baking ingredients" }
 ];
